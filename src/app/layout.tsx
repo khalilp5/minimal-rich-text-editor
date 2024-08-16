@@ -19,10 +19,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={cn(inter.className, "dark:dark")}>
-        <ThemeProvider attribute="class" enableSystem defaultTheme="system">
+      <body className={cn(inter.className)}>
+        <ThemeProvider attribute="class" defaultTheme="dark">
           <ModeToggle className="fixed right-4 top-4" />
-          {children}
+          <main className="container mx-auto min-h-screen">{children}</main>
         </ThemeProvider>
       </body>
     </html>
