@@ -1,9 +1,12 @@
-import Image from "next/image";
+import Form from "@/components/form";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      Hello World
-    </main>
+    <section className="flex flex-col p-24">
+      <h1>Hello World</h1>
+      <div className="py-4">
+        <Form />
+      </div>
+    </section>
   );
 }
