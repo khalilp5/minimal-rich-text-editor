@@ -4,6 +4,7 @@ import "./globals.css";
 import { cn } from "@/lib/utils";
 import { ThemeProvider } from "@/components/theme-provider";
 import { ModeToggle } from "@/components/theme-toggle";
+import { Toaster } from "@/components/ui/toaster";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -23,6 +24,7 @@ export default function RootLayout({
         <ThemeProvider attribute="class" defaultTheme="dark">
           <ModeToggle className="fixed right-4 top-4" />
           <main className="container mx-auto min-h-screen">{children}</main>
+          <Toaster />
         </ThemeProvider>
       </body>
     </html>
